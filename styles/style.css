@@ -38,3 +38,43 @@ body{
 .navbar-container  .home{
     color: #a39b9bde;
 }
+
+
+/* banner related styles here */
+
+.banner{
+    display: flex;
+    /* gap: 20px; */
+    padding: 44px 100px;
+}
+
+.brand-description{
+    width: 610px;
+    /* height: 610px; */
+    margin-right: 20px;
+    background-image: url(../assets/instagram-03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+} 
+
+.brand-description h3{
+    margin: 180px 61px 18px 61px;    
+    font-size: 56px;
+    color: #FFFFFF;
+}
+
+.brand-description p{
+    margin: 0px 130px 27px 61px;
+    color: #FFFFFF;
+}
+.brand-description button{
+    width: 150px;
+    height: 50px;
+    margin: 0px 400px 174px 61px;
+    border: 3px solid #f6f6f6;
+    background: transparent;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 100px;
+}
