@@ -10,6 +10,7 @@ body{
 }
 
 .navbar-container{
+    max-width: 1440px;
     display: flex;
     margin: 0 auto;
     padding-top: 15px;
@@ -42,39 +43,102 @@ body{
 
 /* banner related styles here */
 
-.banner{
+.banner-container{
     display: flex;
-    /* gap: 20px; */
-    padding: 44px 100px;
+    gap: 20px;
+    max-width: 1240px;
+    margin: 40px auto;
 }
 
+/* LEFT BIG IMAGE */
 .brand-description{
     width: 610px;
-    /* height: 610px; */
-    margin-right: 20px;
-    background-image: url(../assets/instagram-03.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-} 
+    min-height: 610px;
+    background:
+      linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+      url(../assets/instagram-03.jpg) center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+}
 
 .brand-description h3{
-    margin: 180px 61px 18px 61px;    
     font-size: 56px;
-    color: #FFFFFF;
+    color: #fff;
+    margin-bottom: 15px;
 }
 
 .brand-description p{
-    margin: 0px 130px 27px 61px;
-    color: #FFFFFF;
+    max-width: 400px;
+    color: #eee;
+    margin-bottom: 25px;
 }
+
 .brand-description button{
-    width: 150px;
+    width: 160px;
     height: 50px;
-    margin: 0px 400px 174px 61px;
-    border: 3px solid #f6f6f6;
+    border: 2px solid #fff;
     background: transparent;
-    color: #FFFFFF;
-    font-size: 20px;
-    font-weight: 100px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* RIGHT SIDE GRID */
+.product-description{
+    width: 610px;
+}
+
+.product-card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* COMMON STYLE FOR ALL 4 CARDS */
+.product-card > div{
+    height: 295px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+/* INDIVIDUAL BACKGROUNDS */
+.women{
+    background:
+      linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
+      url(../assets/instagram-01.jpg) center/cover no-repeat;
+}
+
+.men{
+    background:
+      linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
+      url(../assets/baner-right-image-02.jpg) center/cover no-repeat;
+}
+
+.kids{
+    background:
+      linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
+      url(../assets/baner-right-image-03.jpg) center/cover no-repeat;
+}
+
+.accessories{
+    background:
+      linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
+      url(../assets/baner-right-image-04.jpg) center/cover no-repeat;
+}
+
+.product-card h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-card p{
+    max-width: 220px;
+    font-size: 14px;
+    color: #ddd;
 }
