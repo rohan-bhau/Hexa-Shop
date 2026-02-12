@@ -199,6 +199,8 @@ html{
 } */
 .img-wrapper {
   position: relative;
+  width: 400px;
+  height: 445px;
 }
 
 .img-wrapper img {
@@ -262,11 +264,23 @@ html{
 .mens-section{
     padding: 90px;
     padding-top: 0;
+    border-top: 2px dotted #d1c1c1;
 }
 
 /* womens related styles here */
 
 .womens-section{
 padding: 90px; 
-padding-top: 0;   
+padding-top: 0;
+border-top: 2px dotted #d1c1c1; 
+}
+
+/* kids related styles here */
+
+.kids-section{
+    padding: 90px;
+    padding-top: 0;
+    border-top: 2px dotted #d1c1c1;
+    border-bottom: 2px dotted #d1c1c1;
+
 }
