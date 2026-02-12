@@ -153,8 +153,32 @@ html{
 /* Man's section starts here */
 /* ================================================== */
 
+.mens-section-container{
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.mens-section-container h3{
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.mens-section-container p{
+    font-size: 14px;
+    color: #1a1717;
+    margin-bottom: 20px;
+}
+
+.mens-card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+}
+
 .mens-section-card{
-    width: 400px;
+    /* width: 400px; */
     height: 565px;
     background-color: #d9d9d9;
     border-radius: 10px;
@@ -192,10 +216,32 @@ html{
 .mens-section-card .card-container h4{
     color: #000000;
     font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 15px;
 }
 
 
 .mens-section-card .card-container .rating{
-   justify-self: end;
+   color: #FFA92E;
+    margin-left: 115px;
+    font-size: 25px;
+}
 
+.card-container .price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: ;
+}
+
+.card-container .price p{
+    font-size: 20px;
+}
+
+.card-container .price .save-items{
+    font-size: 25px;
+}
+
+.card-container .price #like-button{
+    color: #ff0000;
 }
